@@ -52,7 +52,7 @@ module "alb" {
   name    = "terra-alb"
   vpc_id  = module.vpc.vpc_id
   subnets = module.vpc.public_subnets
-  security_group = module.blog_sg.security_group_id
+  security_groups = module.blog_sg.security_group_id
 
 listeners = {
     ex-http-https-redirect = {
