@@ -24,7 +24,7 @@ resource "aws_instance" "blog" {
   vpc_security_group_ids = [aws_security_group.blog.id]
 
   tags = {
-    Name = "EC2-Terra-Test"
+    Name = "Terra_Test"
   }
 }
 
