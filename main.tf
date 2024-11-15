@@ -42,7 +42,7 @@ resource "aws_instance" "blog" {
   subnet_id = module.vpc.public_subnets[0]
 
   tags = {
-    Name = "Terra_Test"
+    Name = "Test_Server"
   }
 }
 
